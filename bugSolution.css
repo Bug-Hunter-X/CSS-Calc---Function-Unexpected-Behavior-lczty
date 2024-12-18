@@ -1,0 +1,20 @@
+/* Solution: Ensuring Correct Unit Usage and Calculation Order */
+#container {
+  width: 500px;
+}
+
+#element {
+  width: calc(50% - 20px); /*Improved calculation and unit consistency*/
+  background-color: lightblue;
+}
+
+/* Alternative solution addressing whitespace issues within calc() */
+#element2 {
+  width:calc(100% - 20px); /*Correct Spacing*/
+  background-color: lightgreen;
+}
+/*Avoid Complex Nesting*/
+#element3 {
+  width: calc(100% - 20px - 10px); /*Simpler Calculation*/
+  background-color: lightcoral;
+}
